@@ -1,7 +1,30 @@
 ## Fabricio Nogueira
 
-<div>
-	<a target="_blank" href="https://fabricionogueira.me/">
-		<img src="https://res.cloudinary.com/nogsantos/image/upload/v1597239140/Site/Image_Pasted_at_2020-8-12_10-29.png?sanitize=true">
-	</a>
-</div>
+```jsx
+
+import { Vue, Component } from 'nuxt-property-decorator';
+
+@Component
+class Index extends Vue {
+  page: String = 'index';
+  title: String = '';
+  content: String = '';
+
+  head() {
+    return {
+      title: this.title
+    };
+  }
+
+  async fetch() {
+    const { html, attributes } = await import(
+      `@/contents/pages/${this.page}.md`
+    );
+    this.title = attributes.title;
+    this.content = html;
+  }
+}
+
+export default Index;
+
+```
