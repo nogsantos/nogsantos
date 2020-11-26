@@ -1,7 +1,7 @@
 <h1 align="center">Hello 👋, I'm Fabricio Nogueira</h1>
 <h3 align="center">A developer from Brazil</h3>
 
-- 👨‍💻 All of my stuffs are available at [https://fabricionogueira.me/](https://fabricionogueira.me/)
+- 👨‍💻 All of my stuffs are available at [here](https://linktr.ee/nogsantos)
 
 - 📫 How to reach me **nogsantos@gmail.com**
 
